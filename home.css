@@ -1,0 +1,58 @@
+.sidepannel{
+    height:100vmax;
+    width:20%;
+    float:left;
+    background-color: rgb(235, 238, 240);
+    padding: 20px;
+    /* margin: 10px; */
+    margin-right: 20px;
+}
+li{
+    padding: 20px;
+}
+ul{
+    list-style-type: none;
+}
+
+.sec1{
+    padding: 20px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+
+}
+.head{
+    border: 10px black;
+    align-items: center;
+    background-color: rgb(166, 196, 251);
+    border-radius: 8px;
+    text-align: center;
+    overflow: auto;
+}
+.content {
+    border: 2px;
+    /* display: table; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.b1,.b2,.b3,.b4{
+    border: 20px black;
+    display:block;
+    border-radius: 8px;
+    background-color: aquamarine;
+    width: 24%;
+    height: 25%;
+    padding: 5px;
+    margin: 10px;
+    
+}
+/* .b1{
+    float:left
+}
+.b3{
+    float:right
+} */
+
+
