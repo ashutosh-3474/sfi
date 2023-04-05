@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>home page</title>
+    <style>
+
+        *{
+            /* overflow: ; */
+        }
+        .sidepannel{
+            height:100vmax;
+            width:20%;
+            float:left;
+            background-color: rgb(235, 238, 240);
+            /* padding: 20px; */
+            /* margin: 10px; */
+            margin-right: 20px;
+            align-content:center;
+        }
+        .menu{
+            /* float:none; */
+            align-items:center;
+        }
+        li{
+            padding: 20px;
+        }
+        ul{
+            list-style-type: none;
+        }
+
+        .sec1{
+            padding: 20px;
+            /* display: flex;
+            align-items: center;
+            justify-content: center; */
+
+        }
+        .head{
+            border: 10px black;
+            align-items: center;
+            background-color: rgb(166, 196, 251);
+            border-radius: 8px;
+            text-align: center;
+            overflow: auto;
+        }
+        .content {
+            border: 2px;
+            /* display: table; */
+            display: table;
+            overflow: scroll;
+            align-items: center !important;
+            justify-content: center;
+            
+            
+        }
+        /* .b1,.b2,.b3,.b4{
+            border: 20px black;
+            display:inline-block;
+            border-radius: 8px;
+            background-color: aquamarine;
+            width: 25vmax;
+            height: 25%;
+            padding: 5px;
+            margin: 10px; 
+            
+        }*/
+        /* .b1{
+            float:left
+        }
+        .b3{
+            float:right
+        } */
+
+
+
+
+        /* (A) HORIZONTAL LIST */
+        .hlist1,.hlist2 {
+            /* (A1) REMOVE DEFAULT INDENTATIONS */
+            padding: 0;
+            margin: 0;
+            
+            /* (A2) FLEXIBLE BOX */
+            display: flex;
+            width: 100%;
+            
+            /* (A3) COSMETICS */
+            /* background: #ffecec; */
+        }
+        
+        /* (B) LIST ITEMS */
+        .hlist1 li,.hlist2 li {
+            /* (B1) REMOVE BULLET POINTS */
+            list-style-type: none;
+            
+            /* (B2) IF YOU WANT TO KEEP THE BULLET POINTS *
+            list-style-position: inside;
+            
+            /* (B3) DIMENSIONS */
+            box-sizing: border-box;
+            padding: 10px;
+            width: 250px !important;
+            border-radius: 25px;
+            border: 20px black;
+            /* border-radius: 8px; */
+            padding: 5px;
+            margin: 10px; 
+            margin-bottom: 25px;
+            overflow: auto;
+            background-color: aquamarine;
+            height: 250px; /* auto spacing */
+        }
+        
+        /* (C) RESPONSIVE SUPPORT - ON SMALL SCREENS */
+        @media screen and (max-width: 768px) {
+            /* (C1) ALLOW LIST ITEMS TO WRAP TO NEW ROW */
+            .hlist1,.hlist2 { flex-wrap:wrap; }
+            
+            /* (C2) 2 ITEMS PER ROW */
+            .hlist li,.hlist2 li { width: 50%; }
+        }
+        @media screen and (max-width: 768px) {
+            /* (C1) ALLOW LIST ITEMS TO WRAP TO NEW ROW */
+            .hlist1,.hlist2 { flex-wrap:wrap; }
+            
+            /* (C2) 2 ITEMS PER ROW */
+            .hlist li,.hlist2 li { width: 33.33%; }
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="home.css"> -->
+</head>
+<body>
+    <div class="sidepannel">
+        <div class="logo">
+            <img src="#" alt="logo" width="100px">
+            
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#"><img src="#" alt="home"></a> </li>
+                <li><a href="#"><img src="https://em-content.zobj.net/thumbs/120/apple/354/pill_1f48a.png" height="30px" alt="pills"></a> </li>
+                <li><a href="#"><img src="https://em-content.zobj.net/thumbs/120/apple/354/red-apple_1f34e.png"height="30px" alt="diet"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class ="sec1">
+        <div class="head">
+            <h1>Greeting, Jon Snow</h1>
+        </div>
+        
+        <div class="content">
+            <!-- <div class="b1">
+                <p><a href="#">this is place holder 1</a></p>
+            </div>
+            <div class="b2">
+                <p><a href="#">this is place holder 2</a></p>
+            </div>
+            <div class="b3">
+                <p><a href="#">this is place holder 3</a></p>
+            </div>
+            <div class="b4">
+                <p><a href="#">this is place holder 4</a></p>
+            </div> -->
+
+
+            <ul class="hlist1">
+                <li><div class="b1">
+                    <p><a href="#">this is place holder 1</a></p>
+                </div></li> 
+                <li><div class="b2">
+                    <p><a href="#">this is place holder 2</a></p>
+                </div></li> 
+                <li><div class="b3">
+                    <p><a href="#">this is place holder 3</a></p>
+                </div></li> 
+            </ul>
+            <!-- <br> -->
+            <ul class="hlist2">
+                <li><div class="b4">
+                    <p><a href="#">this is place holder 4</a></p>
+                 </div></li>
+            </ul> 
+        </div>
+    </div>
+</body>
+</html>
